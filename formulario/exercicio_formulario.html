@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>exercicio</title>
+</head>
+<body>
+    <h1>Bem vindo ao formulário de cadastro.</h1>
+    <hr>
+    <h2>vamos precisar de alguns dados:</h2>
+    <hr>
+    <br>
+     <form>
+        <label for="nome">Digite o seu nome:</label><br>
+         <input type="text" name="nome" id="nome"><br>
+      <label for="idade">Digite sua idade:</label><br>
+      <input type="text" name="idade" id="idade"><br>
+      <label for="cpf">Digite seu CPF:</label><br>
+      <input type="text" name="cpf" id="cpf"><br>
+<label for="email">Digite o seu e-mail:</label><br>
+<input type="email" name="email" id="email"><br>
+<label for="nascimento">Data de nascimento:</label><br>
+<input type="date" name="nascimento" id="nascimento"><br>
+<br>
+<hr>
+<h3>Qual seria o seu endereço:</h3>
+<label for="rua">Rua: </label><input type="text" name="rua" id="rua"><label for="numero"> Numero: </label><input type="text" name="numero" id="numero"><br><br><label for="bairro"> Bairro: </label><input type="text" name="bairro" id="bairro"><label for="cidade"> Cidade: </label><input type="text" name="cidade" id="cidade"><br><br><label for="estado"> Estado: </label><input type="text" name="estado" id="estado"><br><br>
+<hr>
+<label for="cor">Qual seria sua cor favorita?</label><br>
+<input type="color" name="cor" id="cor"><br><br>
+
+<label for="profissao">Qual seria sua profissão:</label><br>
+<input type="text" name="profissao" id="profissao"><br>
+<br>
+<label for="hobby">Você tem algum hobbie?</label><br>
+<textarea name="hobby" id="hobby" cols="30" rows="10"></textarea><br>
+<br>
+<label for="linguagem">Qual linguagem de programação você utiliza?</label><br>
+Javascript: <input type="checkbox" name="Javascript" id="linguagem" value="Javascript"> PHP:<input type="checkbox" name="php" id="php" value="php"> SQL:<input type="checkbox" name="sql" id="linguagem" value="sql"><br>
+<br>
+<label for="cursos">Selectiona sem curso expecializado:</label><br>
+<select>
+    <option value="1">Redes de computadores</option>
+    <option value="2">Analise e desenvolvimento de sistemas</option>
+    <option selected value="3">informática para internet</option>
+</select>
+     </form>
+</body>
+</html>

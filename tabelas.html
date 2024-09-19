@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tabelas</title>
+</head>
+<body>
+    <h1>Trabalhando com tabelas</h1>
+    <h2>Tabelas simples:</h2>
+    <table border="1">
+        <!-- tr = é definido como linha
+        td = é definida como célula -->
+        <tr>
+            <td>Violão</td>
+            <td>Guitarra</td>
+        </tr>
+
+        <tr>
+            <td>Violino</td>
+            <td>Piano</td>
+        </tr>
+    </table>
+
+    <h2>Tabela com célula de Título:</h2>
+
+    <table border="1">
+<tr>
+    <th>Instrumentos de corda</th>
+    <th>Instrumentos de sopro</th>
+    <th>Icones</th>
+</tr>
+
+<tr>
+<td>Violino</td>
+<td>Flauta</td>
+<td>&#9833;</td>
+</tr>
+
+<tr>
+    <td>Violão</td>
+    <td>saxophone</td>
+</tr>
+
+    </table>
+
+    <h2>cabeçalho vertical</h2>
+    <table border="1">
+        <tr>
+            <th>Livros</th>
+            <td>Arte moderna</td>
+            <td>Programação</td>
+        </tr>
+        <tr>
+            <th>Quantidade</th>
+            <td>500</td>
+            <td>300</td>
+        </tr>
+    </table>
+
+    <h2>cabeçalho, corpo e rodapé da tabela</h2>
+    <p>Estes elementos criam seções dentro da tabela que podem receber uma formatação diferenciada,útil para a formatação de tabelas com muitos dados.</p>
+    <table border="1">
+<caption>Tabela thead/tfoot/tbody</caption>
+<thead>
+    <tr>
+        <th colspan="2">Coluna 1</th>
+        <th>Coluna 2</th>
+        <!-- <th>Coluna 3</th> -->
+    </tr>
+</thead>
+<tfoot>
+    <tr>
+        <td>Resultado1</td>
+        <td>Resultado2</td>
+        <td>Resultado3</td>
+    </tr>
+</tfoot>
+<tbody>
+    <tr>
+        <td rowspan="2">Conteúdo1</td>
+        <td>Conteúdo2</td>
+        <td>Conteúdo3</td>
+    </tr>
+
+    <tr>
+        <td>Conteúdo4</td>
+        <td>Conteúdo5</td>
+        <td>Conteúdo6</td>
+    </tr>
+
+    <tr>
+        <td>Conteúdo7</td>
+        <td>Conteúdo8</td>
+        <td>Conteúdo9</td>
+    </tr>
+</tbody>
+    </table>
+</body>
+</html>

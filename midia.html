@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+   
+    <title>midia</title>
+</head>
+<body>
+    <h1>Inserindo música e video </h1>
+    <p>para inserir uma música mp3 em sua página web o arquivo deve estar em uma pasta junto com a raiz do site (midia).</p>
+    <audio controls>
+        <source src="./midia/video/metalica_nothing.mp3" type="audio/mp3">
+    </audio>
+    <hr>
+    <p>Veja o vídeo a seguir:</p>
+    <video controls>
+        <source src="./midia/video/london.mp4" type="video/mp4">
+    </video>
+    <br>
+    <hr>
+    <video controls>
+        <source src="./midia/video/pink-floyd.mp4" type="video/mp4">
+        <track kind="subtitles" srclang="pt-br" src="./midia/video/egenda-ptbr.vtt" label="Português Brasil" default>  
+        <track kind="subtitles" srclang="en" src="./midia/video/legenda-en.vtt" label="Inglês" default>  
+    </video >
+
+    <p>Existe outra forma de inserir o video sem que o aplicativo /arquivo, por meio do site youtube</p>
+
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/7PHgK-Apzno?si=6G7rmxPx3m3iwILz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</body>
+</html>

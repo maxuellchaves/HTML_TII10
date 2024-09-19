@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <title>formulario</title>
+</head>
+<body>
+    <h1>Trabalhando com tags para formulários</h1>
+    <hr>
+    <p>
+        elementos para formulário são voltados para interação com o usuário.
+    </p>
+    <p>formulários, para serem funcionais precisam de uma linguagem de programação para captar e manipular os dados digitados</p>
+    <p>para usar o Formúlario é necessário adicionar a tag "form".</p>
+    <form>
+<h2>Exemplos</h2>
+<label for="nome">Nome: </label>
+<input type="text" id="nome" name="">
+<br>
+<label for="email">E-mail: </label>
+<input type="email" id="email" name="email">
+<label for="telefone">Telefone: </label>
+<input type="tel" id="telefone" name="telefone">
+<br>
+<label for="status">Aluno <input type="radio" id="aluno" name="status">Professor <input type="radio" name="status" id="professor"> Outro <input type="radio" id="outro" name="status"></label>
+<br>
+<label for="interesses">interesses</label>
+PHP
+<input type="checkbox" id="interesses" name="interesses" value="PHP">
+Javasript
+<input type="checkbox" id="interesses" name="Javasript" value="Javasript">
+SQL
+<input type="checkbox" id="interesses" name="SQL" value="SQL">
+<br>
+<label for="nascimento">Data de nascimento:</label>
+<input type="date" id="nascimento" name="nascimento">
+<br>
+<label for="cor">Qual sua cor favorita?</label>
+<input type="color" id="cor" name="cor">
+<br>
+<select name="curso">
+    <option selected value="1">Técnico em informática</option>
+    <option value="2">Técnico em redes</option>
+    <option value="3">Técnico em desenvolvimento de sistema</option>
+</select>
+<br>
+<label for="apresentese">apresente-se</label><br>
+<textarea name="apresentese" id="apresentese" cols="30" rows="10"></textarea>
+<input type="submit" value="Enviar">
+<button type="submit">Enviar</button>
+<button type="reset">Limpar</button>
+    </form>
+</body>
+</html>
