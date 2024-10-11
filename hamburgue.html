@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hamburguer</title>
+</head>
+<style>
+    * {
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+    }
+
+    .center {
+        margin: 0 auto;
+        max-width: 1280px;
+        width: 100%;
+    }
+
+    .pedido-selecionado {
+        max-width: 1000px;
+        width: 100%;
+        margin: 30px auto;
+        padding: 30px 0;
+        border-radius: 20px;
+        box-shadow: 4px 4px 8px 0px rgba(0, 0, 0, 0.733);
+        background-color: rgb(228, 150, 6);
+    }
+
+    .pedido-selecionado .menu-selecionado {
+        width: 100%;
+        text-align: center;
+
+    }
+
+    .pedido-selecionado .menu-selecionado p {
+        display: inline-block;
+        padding-bottom: 5px;
+        margin: 20px 12px;
+        cursor: pointer;
+    }
+
+    .pedido-selecionado .menu-selecionado .option-selected {
+        color: rgb(67, 146, 146);
+        border-bottom: 4px solid rgb(67, 146, 146);
+    }
+
+    .pedido-selecionado table {
+        width: 100%;
+        border-collapse: collapse;
+
+    }
+
+    .pedido-selecionado .row-selected {
+        background-color: rgb(67, 146, 146);
+        color: white;
+    }
+
+    .pedido-selecionado .row-default {
+        cursor: pointer;
+    }
+
+    .pedido-selecionado table tr td {
+        text-align: center;
+        max-width: 33.3%;
+        width: 100%;
+        position: relative;
+        padding-bottom: 20px;
+    }
+
+    .pedido-selecionado table tr td p {
+        position: relative;
+        left: 69px;
+        text-align: start;
+    }
+
+    .pedido-selecionado table tr td img {
+        width: 64px;
+        height: 64px;
+        left: 0;
+        position: absolute;
+        display: inline-block;
+    }
+</style>
+
+<body>
+    <div class="center">
+
+        <section class="pedido-selecionado">
+            <div class="menu-selecionado">
+                <p class="option-selected">Hamburgueres</p>
+                <p>Salgados e pastéis</p>
+                <p>Bebibas</p>
+                <p>Receitas adicionais</p>
+            </div>
+            <table>
+                <tr>
+                    <th>Quantidade</th>
+                    <th>Descrição de pedido</th>
+                    <th>Valor</th>
+                </tr>
+                <tr class=" row-default">
+                    <td><input type="number" value="1"></td>
+                    <td><img src="https://assets.unileversolutions.com/recipes-v2/106684.jpg" alt="x-salada">
+                        <p><strong>X-salada</strong><br>Pão de hambúrguer, hamburguer artesanal, salada, tomate,queijo
+                        </p>
+                    </td>
+                    <td>R$ 43,00</td>
+                </tr>
+
+
+                <tr class="row-default">
+                    <td><input type="number" value="1"></td>
+                    <td><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmqyVizzQHZKarMh1fZtqTWrRq6zrZspKnug&s"
+                            alt="x-bacno">
+                        <p><strong>X-bacon</strong><br>Pão de hambúrguer, hamburguer artesanal, salada,
+                            tomate,queijo,banco</p>
+                    </td>
+                    <td>R$ 33,00</td>
+                </tr>
+            </table>
+        </section>
+
+        <section class="pedido-selecionado pedido-total">
+            <table>
+                <tr>
+                    <th>Quantidade</th>
+                    <th>Descrição de pedido</th>
+                    <th>Valor</th>
+                </tr>
+            </table>
+        </section>
+    </div>
+
+    <script>
+        let linhas = document.querySelectorAll(".row-default");
+        let selecionar = document.querySelector(".pedido-total table");
+
+        for (let x of linhas) {
+            x.addEventListener('click', function () {
+
+                if (x.classList.contains('row-selected')) {
+                    x.classList.remove("row-selected");
+                    fetch('produtos.php').then((e) => {
+                        if (e.ok) {
+                            e.text()
+                        }
+                    }).then((dados) => {
+                        selecionar.innerHTML = dados;
+                    })
+
+                } else {
+                    x.classList.add("row-selected");
+
+                    let criado = document.createElement('tr');
+                    criado.innerHTML = x.innerHTML;
+                    selecionar.appendChild(criado);
+
+                }
+            })
+        }
+    </script>
+</body>
+
+</html>

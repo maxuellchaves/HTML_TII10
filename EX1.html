@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: rgb(224, 219, 219);
+        }
+
+        .center {
+            max-width: 1000px;
+            width: 100%;
+            margin: 0 auto;
+        }
+
+        img {
+            width: 300px;
+            height: 234px;
+        }
+
+        .menu {
+            /* background-color: red; */
+            height: 30px;
+            margin-bottom: 29px;
+        }
+
+        .menu a.active {
+            margin-left: 100px;
+            background-color: rgb(95, 95, 95);
+        }
+
+        a {
+            border-radius: 10px;
+            background-color: rgb(167, 165, 165);
+            color: white;
+            padding: 16px;
+            text-decoration: none;
+            margin: 0 1px;
+            cursor: pointer;
+            left: 20px;
+        }
+
+        .menu .normal:hover {
+            background-color: orange;
+        }
+
+
+
+
+        .Carros,
+        .Frutas,
+        .Pessoas {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        .carroantigo,
+        .carronovo,
+        .carropop,
+        .citricas,
+        .vermelhas,
+        .verdes,
+        .adultos,
+        .criancas,
+        .idosos {
+            padding: 10px;
+            width: 300px;
+            background-color: rgb(255, 255, 255);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="center">
+        <h1>Modelo de Página</h1>
+        <hr>
+        <h2>Página de Teste</h2>
+        <div class="menu">
+            <a class="active" href="">Carro</a>
+
+            <a class="normal" href="#fr">Pessoas</a>
+
+            <a class="normal" href="#pr">Frutas</a>
+        </div>
+
+        <div class="Carros">
+            <div class="carroantigo"><img src="img/carro-antigo.webp">
+                <h3>Carros Antigos</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum dolorem perspiciatis magni
+                    temporibus
+                    minus accusantium sed dolore optio iure eum, unde, doloribus, est aspernatur voluptatem a? Velit
+                    dignissimos distinctio at.</p>
+            </div>
+            <div class="carronovo"><img src="img/carroNovo.jpg">
+                <h3>Carros Novos</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum dolorem perspiciatis magni
+                    temporibus
+                    minus accusantium sed dolore optio iure eum, unde, doloribus, est aspernatur voluptatem a? Velit
+                    dignissimos distinctio at.</p>
+            </div>
+
+            <div class="carropop"><img src="img/populares.jpg">
+                <h3>Carros Populares</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum dolorem perspiciatis magni
+                    temporibus
+                    minus accusantium sed dolore optio iure eum, unde, doloribus, est aspernatur voluptatem a? Velit
+                    dignissimos distinctio at.</p>
+            </div>
+        </div>
+        <br>
+        <div id="fr" class="Frutas">
+            <div  class="citricas"><img src="img/citricas.png">
+                <h3>Frutas Citricas</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum dolorem perspiciatis magni
+                    temporibus
+                    minus accusantium sed dolore optio iure eum, unde, doloribus, est aspernatur voluptatem a? Velit
+                    dignissimos distinctio at.</p>
+            </div>
+            <div class="vermelhas"><img src="img/frutas-vermelhas.png">
+                <h3>Frutas Vermelhas</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum dolorem perspiciatis magni
+                    temporibus
+                    minus accusantium sed dolore optio iure eum, unde, doloribus, est aspernatur voluptatem a? Velit
+                    dignissimos distinctio at.</p>
+            </div>
+
+            <div class="verdes"><img src="img/verdes.jpg">
+                <h3>Frutas Verdes</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum dolorem perspiciatis magni
+                    temporibus
+                    minus accusantium sed dolore optio iure eum, unde, doloribus, est aspernatur voluptatem a? Velit
+                    dignissimos distinctio at.</p>
+            </div>
+            </div>
+        
+        <br>
+        <div id="pr" class="Pessoas">
+            <div class="adultos"><img src="img/adultos.jpg">
+                <h3>Adultos</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum dolorem perspiciatis magni
+                    temporibus
+                    minus accusantium sed dolore optio iure eum, unde, doloribus, est aspernatur voluptatem a? Velit
+                    dignissimos distinctio at.</p>
+            </div>
+            <div class="criancas"><img src="img/crianca.png">
+                <h3>Crianças</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum dolorem perspiciatis magni
+                    temporibus
+                    minus accusantium sed dolore optio iure eum, unde, doloribus, est aspernatur voluptatem a? Velit
+                    dignissimos distinctio at.</p>
+            </div>
+
+            <div class="idosos"><img src="img/idosos.webp">
+                <h3>Idosos</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum dolorem perspiciatis magni
+                    temporibus
+                    minus accusantium sed dolore optio iure eum, unde, doloribus, est aspernatur voluptatem a? Velit
+                    dignissimos distinctio at.</p>
+    </div>
+    </div>
+</div>
+</body>
+
+</html>

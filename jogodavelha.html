@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>velha</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .center{
+            height: 100vh;
+            max-width: 500px;
+            width: 100%;
+            margin: 0 auto;
+            position: relative;
+        }
+
+        .velha{
+            width: 100%;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+        
+ .velha .row{
+    width: 100%;
+    border-bottom: 1px solid black;
+    display: flex;
+ }
+
+ .velha .row-ultimo{
+    border: 0;
+ }
+ .velha .row .box{
+    width: 30%;
+    display: inline-block;
+    cursor: pointer;
+    height: 100px;
+    font-size: 50px;
+    /* background-color: red; */
+    display: flex;
+    /* flex-direction: column; */
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    border-right: 1px solid black;
+ }
+
+ .velha .row .box-ultimo{
+    border: 0;
+ }
+        
+    </style>
+</head>
+<body>
+    <div class="center">
+        <div class="velha">
+        <div class="row">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box box-ultimo"></div>
+        </div>
+        <div class="row">
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box box-ultimo"></div>
+            </div>
+            <div class="row row-ultimo">
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box box-ultimo"></div>
+                </div>
+        </div>
+        
+        </div>
+    </div>
+    </div>
+
+    <script>
+let box = document.querySelectorAll(".box");
+let valor = "X";
+
+for(let x of box){
+    x.addEventListener('click',function(){
+        x.innerHTML = valor;
+        if(valor == "X"){
+            valor = "O";
+        }else{
+            valor = "X";
+        }
+
+    })
+}
+    </script>
+</body>
+</html>
