@@ -29,6 +29,7 @@
     width: 100%;
     border-bottom: 1px solid black;
     display: flex;
+    justify-content: space-evenly;
  }
 
  .velha .row-ultimo{
@@ -83,8 +84,11 @@
 let box = document.querySelectorAll(".box");
 let valor = "X";
 
-for(let x of box){
+for(let [index,x] of box.entries()){
     x.addEventListener('click',function(){
+        if(index == 0){
+            
+        }
         x.innerHTML = valor;
         if(valor == "X"){
             valor = "O";
