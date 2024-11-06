@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 46</title>
+</head>
+
+<body>
+    <script>
+        let n = prompt("Qual o seu numero?");
+
+        function reverso() {
+          
+            if (n.length > 1) {
+              n= Number(n.split("").reverse().join(""));
+                document.write("Esse " + n + " é seu numero reverso");
+            } else {
+              n= (Number(n));
+                document.write("Seu numero é " + n);
+            }
+          }
+        reverso();
+    </script>
+</body>
+
+</html>

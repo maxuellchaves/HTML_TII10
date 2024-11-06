@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercicio 50</title>
+    <style>
+        ::selection{
+            color: gold;
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+ <script>
+    let n = prompt("Escreva alguma coisa:").toLowerCase();
+       
+   function contagem(carac){
+    let contador = 0; 
+    for(let i = 0; i < n.length;i++){
+        if(carac == n[i]){
+        contador++;
+        }
+    }
+    return contador;
+   }
+
+   document.write(n+"<br>");
+   for(let i = 0;i< n.length;i++){
+    document.write(contagem(n[i]));
+   }
+
+
+ </script>   
+</body>
+</html>

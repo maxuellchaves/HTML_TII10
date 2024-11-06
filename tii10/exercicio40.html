@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 40</title>
+</head>
+<body>
+    <script>
+        let numeros = [];
+        let boleano =true;
+        for(let i = 0; i < 20; i++){
+            numeros[i] = Math.floor(Math.random() * 11);
+            document.write(numeros[i]+"<br>");
+        }
+
+        let digitar = Number(prompt("Digite um número:"));
+        
+        for(let i = 0;i< 20; i++){
+            if(numeros[i] == digitar){
+              boleano = false;
+              break;
+            }
+        }
+        
+        if(boleano){
+            document.write("Esse numero não está cadastrado no array");
+            boleano = true;
+        }else{
+            document.write("Esse está cadastrado no array");
+        }
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercicio 37</title>
+</head>
+<body>
+    <script>
+        let numbers = [];
+        let contador = 0;
+
+      
+        for(let i = 0;i<20;i++){
+            numbers[i] = Math.floor(Math.random()*11);
+            contador += numbers[i];
+        }
+        let media = contador/20;
+        document.write("A média é: "+media+"<br><br>");
+        
+        for(let i = 0;i < 20;i++){
+    if(numbers[i] > media){
+        document.write(numbers[i]+" Está acima da média<br>");
+    }else{
+        document.write(numbers[i]+" <br>");
+    }
+        }
+    
+
+    </script>
+</body>
+</html>

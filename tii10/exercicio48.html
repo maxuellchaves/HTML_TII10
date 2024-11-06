@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 48</title>
+</head>
+
+<body>
+    <script>
+        function formula(c, i, t) {
+            return (c * Math.pow(1 + i,t)).toFixed(2);
+        }
+
+        let capital = Number(prompt("Qual seu investimento inicial:"));
+        let i = Number(prompt("Qual a taxa de juros, em percentual:"));
+        let meses = Number(prompt("Qual o tempo de investimento, em meses:"));
+
+        document.write("O retorno do investimento será : R$ "+formula(capital,i/100,meses));
+    </script>
+</body>
+
+</html>400

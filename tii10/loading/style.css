@@ -1,0 +1,102 @@
+*{
+    box-sizing: border-box;
+padding: 0;
+margin: 0;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.center{
+    max-width: 400px;
+    width: 100%;
+text-align: center;
+position: relative;
+}
+
+
+
+.center button{
+padding: 8px 30px;
+margin-top: 20px;
+cursor: pointer;
+border: 0;
+font-size: 15px;
+color: azure;
+background-color: rgb(22, 129, 216);
+border-radius: 10px;
+}
+
+.center button:disabled{
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+.center .loading-center{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.center .loading-center::before{
+    content: "";
+    width: 100%;
+    position: absolute;
+    left: 0;
+    height: 4px;
+    background-color: rgb(233, 233, 233);
+    top: 20%;
+    z-index: -1;
+    /* transition: .4s; */
+}
+
+.center .loading-center .bar-loading{
+    width: 0%;
+    position: absolute;
+    left: 0;
+    height: 4px;
+    background-color: rgb(22, 129, 216);
+    top: 20%;
+    z-index: -1;
+    transition: .4s;
+}
+
+.center .loading-center .circles{
+    display: flex;
+    /* max-width: 500px; */
+    width: 100%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.center .loading-center .circles .circle.active{
+border: 3px solid rgb(22, 129, 216);
+transition: border-color 0.4s linear;
+}
+
+
+
+.center .loading-center .circles .circle{
+    background-color: rgb(233, 233, 233);
+    width: 40px;
+    display: flex;
+    border: 3px solid white;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    color: #444;
+    border-radius: 50%;
+}
+
+
+
+
+
+
+
+
+

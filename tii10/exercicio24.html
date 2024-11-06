@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercicio</title>
+</head>
+<body>
+    <script>
+        let salario = Number(prompt("Qual seria o seu salário atual?"));
+
+        if(salario <= 280){
+            document.write(`Seu salario atual é R$ ${salario.toFixed(2) }<br> O porcentual de aumento do seu salario é 20% <br> O valor aumento será R$ ${((salario*20)/100).toFixed(2)} <br> O novo salário será R$ ${(((salario*20)/100)+salario).toFixed(2)}`);
+        }else if(salario > 280 && salario <= 700){
+            document.write(`Seu salario atual é R$ ${salario.toFixed(2) }<br> O porcentual de aumento do seu salario é 15% <br> O valor aumento será R$ ${((salario*15)/100).toFixed(2)} <br> O novo salário será R$ ${(((salario*15)/100)+salario).toFixed(2)}`);
+        }else if(salario > 700 && salario <= 1500){
+            document.write(`Seu salario atual é R$ ${salario.toFixed(2) }<br> O porcentual de aumento do seu salario é 10% <br> O valor aumento será R$ ${((salario*10)/100).toFixed(2)} <br> O novo salário será R$ ${(((salario*10)/100)+salario).toFixed(2)}`);
+        }else if(salario > 1500){
+            document.write(`Seu salario atual é R$ ${salario.toFixed(2) }<br> O porcentual de aumento do seu salario é 5% <br> O valor aumento será R$ ${((salario*5)/100).toFixed(2)} <br> O novo salário será R$ ${(((salario*5)/100)+salario).toFixed(2)}`);
+        }else{
+            document.write("Salario digitado invalido <br>(lembrado se tiver numero quebrado precisa não é , e sim ponto)")
+        }
+
+    </script>
+</body>
+</html>

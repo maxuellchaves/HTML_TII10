@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let num, maior=0,menor=9999
+
+        for(let i = 0; i < 1000;i++){
+            num = Math.floor((Math.random()*1000))
+            if(num > maior){
+         maior = num;
+            }else {
+                menor = num;
+            }
+        }
+
+        document.write("Maior número: "+maior+" <br>"+"Menor número: "+menor);
+    </script>
+</body>
+</html>

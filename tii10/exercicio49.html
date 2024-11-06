@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercicio 49</title>
+</head>
+
+<body>
+    <script>
+        let n = Number(prompt("Digite o seu numero:"));
+        let valores = [];
+       let soma ;
+       
+        function fatorial(num) {
+            let valor = num;
+            for (let i = 1; i <= num; i++) {
+                valores.push(valor);
+                valor--;
+                if(!soma){
+                    soma = valor*num;
+                }else{
+                   
+                    if(valor == 0){
+                       valor = 1
+                    }
+                   soma *=valor;
+                }
+            }
+          
+
+            document.write("O fatorial do numero digitado é :" + valores + "<br>  a multiplicação é : "+soma);
+        }
+
+        fatorial(n);
+    </script>
+</body>
+
+</html>

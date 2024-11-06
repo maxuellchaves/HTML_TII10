@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercicio 17</title>
+</head>
+
+<body>
+
+    <script>
+        let n1 = Number(prompt("Qual o valor de sua compra?"))
+        document.write(`Valor da Compra &emsp; % de Desconto<br><br>
+Abaixo de R$ 1.000,00	          &emsp;      5%<br>
+Entre R$ 1.000,00 a <br> R$ 5.000,00	   &emsp;      &emsp;    &emsp;    &emsp;       10%<br>
+Acima de R$ 5.000,00               &emsp;         15%<br><br>`)
+        if (n1 < 1000) {
+            document.write(`R$ ${n1.toFixed(2)} você terá 5% de desconto = R$ ${((n1*5)/100).toFixed(2)}`)
+        } else if (n1 >= 1000 && n1 <= 5000) {
+            document.write(`R$ ${n1.toFixed(2)} você terá 10% de desconto = R$ ${((n1*10)/100).toFixed(2)}`)
+        } else {
+            document.write(`R$ ${n1.toFixed(2)} você terá 15% de desconto = R$ ${((n1*15)/100).toFixed(2)}`)
+        }
+    </script>
+</body>
+
+</html>

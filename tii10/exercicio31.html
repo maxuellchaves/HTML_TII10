@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let contador = 0;
+       let positivo = 0;
+       let valoresInvalidos = 0;
+        for (let i = 0; i < 10; i++) {
+            let n = Number(prompt("Qual é o seu numero:"));
+            if (n < 0) {
+                contador++;
+            }else if(n > 0){
+             positivo++;
+            }else{
+                valoresInvalidos++;
+            }
+        }
+
+      document.write(`Numeros positivos: ${positivo}<br>Numeros negativos: ${contador}<br>Valores invalidos: ${valoresInvalidos}
+      `);
+    </script>
+</body>
+
+</html>

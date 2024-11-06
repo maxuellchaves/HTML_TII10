@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercicio 19</title>
+</head>
+<body>
+    <script>
+        let n = prompt("Digite o seu sexo sendo 1 feminino e 2 masculino:");
+        let alt = prompt("Digite sua altura:");
+
+        if(n == 1){
+       document.write(`Seu peso ideal é ${((62.1 * alt) - 44.7).toFixed(2)}`);
+     
+        }else if(n == 2){
+            document.write(`Seu peso ideal é ${((72.7 * alt) - 58).toFixed(2)}`);
+        }else{
+            document.write("Valor invalido");
+        }
+    </script>
+</body>
+</html>

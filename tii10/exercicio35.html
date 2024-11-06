@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercicio 35</title>
+</head>
+<body>
+    <script>
+        let numeros = [];
+        let dobro = [];
+        for(let i = 0; i< 5;i++){
+            let num = Number(prompt("Digite um numero"));
+            if(num){
+             numeros.push(num);
+             dobro.push(num*2);
+             document.write(numeros[i] +" Dobro é "+dobro[i]+"<br>");
+            }else{
+            document.write("Numero invalido"+"<br>");
+            }
+        }
+    </script>
+</body>
+</html>
