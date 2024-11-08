@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando CSS</title>
+</head>
+<body >
+    <style>
+        p{
+            transition:font-size 0.5s ease;
+        }
+    </style>
+    <h1 onclick="document.getElementById('titulo').style.color = 'initial'" id="titulo">Trabalhando com css em js</h1>
+    <button onclick="document.getElementById('titulo').style.color = 'red'">Alterar a cor do Título</button>
+    <p id="paragrafo">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse impedit perferendis ipsa molestias voluptatem, dolorem similique voluptatum sed doloremque delectus quas sit, assumenda iure. Doloremque, accusantium. Facilis libero culpa dolorem?</p>
+    <button onclick="document.getElementById('paragrafo').style.color ='blue'">Alterar cor</button>
+    <button onclick="document.getElementById('paragrafo').style.fontSize ='24px'">Alterar tamanho da font</button>
+
+    <button onclick="document.getElementById('paragrafo').style.fontFamily ='Courier New'">Alterar familia da font</button>
+   
+    <p id="texto">Texto desenvolvivo por um click</p>
+    <button onclick="document.getElementById('texto').innerHTML = 'texto transformado'">Clique aqui</button>
+    <p><img id="lampada" src="./imagens/luz.jpg" alt=""></p>
+    <!-- <p><img src="./imagens/apagada.jpg" alt=""></p>
+    <p><img src="./imagens/quebrada.jpg" alt=""></p> -->
+  <p >  <button onclick="document.getElementById('lampada').src = 'imagens/luz.jpg'">Ligar</button>
+    <button onclick="document.getElementById('lampada').style.display ='none'">Ocultar</button>
+    <button onclick="document.getElementById('lampada').style.display =''">Mostrar</button>
+    <button onclick="document.getElementById('lampada').src = 'imagens/apagada.jpg'">Apagar</button></p>
+</body>
+</html>

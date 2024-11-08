@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imc</title>
+</head>
+<body>
+    <style>
+        body{
+            font: normal 18pt arial;
+        }
+        #card{
+            width: 400px;
+            text-align: center;
+            margin: 50px;
+            box-shadow: grey 1px 1px 5px;
+            padding: 10px;
+            border-radius: 5%;
+        }
+        input{
+            width: 200px;
+        }
+        h1{
+            margin: 50px;
+            text-transform: uppercase;
+        }
+        #btnRes{
+            background-color: cadetblue;
+            text-transform: uppercase;
+            border-radius: 5%;
+            border: none;
+            height: 30px;
+            cursor: pointer;
+            color: white;
+        }
+        #btnRes:hover{
+            background-color: blue;
+        }
+    </style>
+
+    <h1>calcular IMC</h1>
+    <div id="card">
+        <p><label for="">Qual sua altura?</label>
+            <input type="text" name="altura" id="altura" placeholder="EX: 1.60"></p>
+            <p>
+                <label for="">Qual seu peso?</label>
+                <input type="text" name="peso" id="peso">
+            </p>
+            <p>
+                <input type="button" id="btnRes" value="calcular">
+            </p>
+            <p id="Resultado">Resultado</p>
+    </div>
+
+ <script>
+    let bot = document.getElementById("btnRes");
+
+    function calcular(){
+        let peso = document.getElementById("peso");
+        let altura = document.getElementById("altura");
+
+        let resultado = document.getElementById("Resultado");
+
+        let n1 = Number(altura.value);
+let n2 = Number(peso.value);
+
+let imc = n2 / (n1*n1);
+
+if(imc  < 18.5){
+    return resultado.innerHTML = `Sua altura é: ${n1.toFixed(2)} e seu peso é ${n2.toFixed(2)} logo seu imc é:${imc.toFixed(2)} e você está abaixo do peso`;
+}else if(imc >= 18.5 && imc <=24.9){
+    return resultado.innerHTML = `Sua altura é: ${n1.toFixed(2)} e seu peso é ${n2.toFixed(2)} logo seu imc é:${imc.toFixed(2)} e seu peso está normal`;
+}else if(imc >= 25 && imc <=29.9){
+   
+    return resultado.innerHTML = `Sua altura é: ${n1.toFixed(2)} e seu peso é ${n2.toFixed(2)} logo seu imc é:${imc.toFixed(2)} e você está pré-obeso`;
+}else if(imc >= 30 && imc <= 34.9){
+    return resultado.innerHTML = `Sua altura é: ${n1.toFixed(2)} e seu peso é ${n2.toFixed(2)} logo seu imc é:${imc.toFixed(2)} você é Obeso I`;
+}else if(imc >= 35 && imc <= 39.9){
+    return resultado.innerHTML = `Sua altura é: ${n1.toFixed(2)} e seu peso é ${n2.toFixed(2)} logo seu imc é:${imc.toFixed(2)} você está obeso II`;
+}else{
+    return resultado.innerHTML = `Sua altura é: ${n1.toFixed(2)} e seu peso é ${n2.toFixed(2)} logo seu imc é:${imc.toFixed(2)} você é obeso III`;
+}
+
+
+    }
+    bot.addEventListener("click", calcular)
+ </script>
+</body>
+</html>
