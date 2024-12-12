@@ -16,6 +16,7 @@ overflow: hidden;
     justify-content: space-between;
     width: 100%;
     display: flex;
+    max-width: 1000px;
 }
 
 .center .img-wrap{

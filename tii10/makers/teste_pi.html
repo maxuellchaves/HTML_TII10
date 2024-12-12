@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Protótipo</title>
+<link rel="stylesheet" href="./css/style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #ffffff;
+        }
+
+        .logo {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        menu ul {
+            list-style-type: none;
+            padding: 0;
+            text-align: center;
+        }
+
+        menu li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        menu a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        menu a:hover {
+            color: #ffcc00; /* Cor ao passar o mouse */
+        }
+
+        main {
+            padding: 2rem;
+        }
+
+        .projeto {
+            background-color: white;
+            margin-bottom: 2rem;
+            padding: 1rem;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 74, 141, 0.5);
+            text-align: center;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .projeto:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 0 15px rgba(0, 74, 141, 0.7);
+        }
+
+        .projeto img {
+            width: 100%;
+            height: auto;
+            max-width: 300px; /* Tamanho máximo das imagens */
+        }
+
+
+        p {
+            margin-bottom: 1rem;
+            font-size: 30px;
+        }
+
+        h2 {
+            font-size: 30px;
+        }
+
+       
+
+        @media screen and (min-width: 600px) {
+            .projeto {
+                padding: 0.5rem;
+            }
+
+            menu li {
+                display: block;
+                margin: 10px 0;
+            }
+        }
+
+        @media screen and (max-width:490px){
+            p {
+        
+            font-size: 15px;
+        }
+
+        h2 {
+            font-size: 15px;
+        }
+
+        }
+        @media screen and (min-width: 700px) {
+            .projeto img {
+                max-width: 400px;
+            }
+        }
+
+        @media screen and (min-width: 930px) {
+            .projeto img {
+                max-width: 700px;
+            }
+        }
+
+        @media screen and (min-width: 1200px) {
+            .projeto img {
+                max-width: 900px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="center">
+          <div class="logo desktop mobile">
+            <a href=""><img src="./image/logo.png" alt=""></a>
+          </div>
+          <menu class="desktop">
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="sobre.html">Sobre</a></li>
+              <li><a href="EVENTOS_pi.html">Eventos</a></li>
+              <li><a href="teste_pi.html">Projetos</a></li>
+             
+            </ul>
+          </menu>
+          <div class="design-mobile">
+    <img src="./image/MENU.png" alt="">
+    <p>Menu <br><i class="fa-solid fa-bars"></i></p>
+          </div>
+          <menu class="mobile">
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="sobre.html">Sobre</a></li>
+              <li><a href="EVENTOS_pi.html">Eventos</a></li>
+              <li><a href="">Projetos</a></li>
+             
+            </ul>
+          </menu>
+        </div>
+      </header>
+
+    <main>
+        <section>
+            <div class="projeto">
+                <h2>Projeto 1</h2>
+                <img src="imagem_ivan/imgPROJETO1.png" alt="Descrição do Projeto 1">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic voluptatum explicabo excepturi tenetur laudantium enim amet voluptas provident veritatis.</p>
+            </div>
+
+            <div class="projeto">
+                <h2>Projeto 2</h2>
+                <img src="imagem_ivan/imgPROJETO2.png" alt="Descrição do Projeto 2">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic voluptatum explicabo excepturi tenetur laudantium enim amet voluptas provident veritatis.</p>
+            </div>
+
+            <div class="projeto">
+                <h2>Projeto 3</h2>
+                <img src="imagem_ivan/imgPROJETO3.png" alt="Descrição do Projeto 3">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic voluptatum explicabo excepturi tenetur laudantium enim amet voluptas provident veritatis.</p>
+            </div>
+        </section>
+
+
+    </main>
+
+    <div class="desktop-total">
+        <footer>
+            <div class="center">
+            <div class="img-senac">
+              <img src="./image/image_1.png" alt="logo">
+            </div>
+              <div class="content">
+                <p> <img src="./image/Vector.png" alt="copyright"> 2024 Senac. Todos os direitos reservados</p>
+                <p>Desenvolvido por Ivan, Isabelly, Maxuell, Victoria , Andrielle e Matheus</p>
+              </div>
+            </div>
+        
+          </footer>
+
+    </div>
+
+   
+
+
+    <div class="mobile-completo">
+        <div class="layerMobile"></div>
+  <div class="menu-mobile2">
+    <div class="wrapperAll">
+      <p class="tirar">X</p>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="sobre.html">Sobre</a></li>
+        <li><a href="EVENTOS_pi.html">Eventos</a></li>
+        <li><a href="">Projetos</a></li>
+
+      </ul>
+    </div>
+  </div>
+
+  <section class="final">
+   
+    <div class="final-img">
+      <img src="./image/logofinal.png" alt="">
+    </div>
+  <div class="final-content">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. </p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+  </div>
+</section>
+    </div>
+    
+    
+   
+    <script>
+        // Verifica se as imagens estão carregadas corretamente
+        document.addEventListener("DOMContentLoaded", function() {
+            const images = document.querySelectorAll("img");
+            images.forEach(img => {
+                img.onerror = function() {
+                    console.error("Erro ao carregar a imagem:", img.src);
+                };
+            });
+        });
+    </script>
+
+<script src="https://kit.fontawesome.com/f23558bc9b.js" crossorigin="anonymous"></script>
+<script src="./js/jquery.js"></script>
+<script src="./js/variaveis3.js"></script>
+<script src="./js/funcoes.js"></script>
+<script src="./js/script3.js"></script>
+</body>
+</html>

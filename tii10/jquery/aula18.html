@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 18</title>
+</head>
+
+<body>
+    <button>Esconder</button>
+    <button>troca cor</button>
+    <div id="instrucao">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur, libero.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur, libero.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur, libero.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur, libero.</p>
+        <h2>$(seletor).evento(função)</h2>
+    </div>
+    
+    <script src="./jquery.js"></script>
+    <script>
+        // $(document).ready(function(){
+        //  $('p').click(function(){
+        //  $(this).hide();
+        //  });
+        // });
+
+//         $(document).ready(function(){
+// $("#instrucao").dblclick(function(){
+// $(this).hide("fast");
+// });
+//         });
+
+$(document).ready(function(){
+    $('button:nth-of-type(1)').click(function(){
+    $("#instrucao").slideToggle("slow");
+})
+$('button:nth-of-type(2)').hover(function(){
+    $("h2").css('color','orange');
+    $("p").css({
+    "color":"blue",
+    "font-size":"40px",
+    "font-family":"Times New Romans"
+})
+})
+
+$('button:nth-of-type(2)').mouseleave(function(){
+    $("h2").css('color','black');
+    $("p").css({
+    "color":"initial",
+    "font-size":"initial",
+    "font-family":"initial"
+})
+})
+
+
+})
+    </script>
+</body>
+
+</html>

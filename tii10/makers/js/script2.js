@@ -1,0 +1,2 @@
+changeEquipamento();
+menuMobile();

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercicio 2</title>
+</head>
+<body>
+    <button>Animação</button>
+<div style="background-color: chartreuse; height: 100px; width: 100px; position: absolute;">
+
+</div>
+    <script src="./jquery.js"></script>
+    <script>
+$(document).ready(function(){
+    $('button').click(function(){
+        $("div").animate({
+            left: "250px"
+        })
+
+        
+    })
+})
+    </script>
+</body>
+</html>
